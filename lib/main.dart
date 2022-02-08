@@ -28,7 +28,7 @@ class _ButtonAppState extends State<ButtonApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: txtColor,
         appBar: AppBar(
           title: Text("Button"),
           leading: Icon(Icons.menu),
