@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
 }
 //create variable
 String btnText = "Click here";
+Color txtColor = Colors.black;
 Color btnColor = Colors.white;
 
 class ButtonApp extends StatefulWidget {
@@ -37,11 +38,13 @@ class _ButtonAppState extends State<ButtonApp> {
           children: [
             Center(
               child: RaisedButton(
-                child: Text(btnText,style: TextStyle(color: btnColor),),
+                child: Text(btnText,style: TextStyle(color: txtColor),),
+                  color: btnColor,
                   onPressed: (){
                 setState(() {
                   btnText = "Button is clicked";
-                  btnColor = Colors.redAccent;
+                  txtColor = Colors.redAccent;
+                  btnColor = Colors.black;
                 });
               }
               ),
